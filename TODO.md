@@ -6,4 +6,4 @@
 * [ ] switch to ionic over bootstrap
 * [ ] transcode pipe HTML5-unsupported video files
 * [ ] remove lodash, & replace searches if I am still using it
-* [ ] handle HTML5 url stuff better, in client-side (jumpto correctroute on refresh)
+* [X] handle HTML5 url stuff better, in client-side (jumpto correctroute on refresh)
