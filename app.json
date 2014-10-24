@@ -13,9 +13,5 @@
   "website": "https://github.com/konsumer/eztvstream",
   "repository": "https://github.com/konsumer/eztvstream",
 
-  "env": {
-    "BUILDPACK_URL": "https://github.com/ddollar/heroku-buildpack-multi"
-  },
-
   "addons": ["mongolab"]
 }
