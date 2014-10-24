@@ -79,7 +79,7 @@ Episode.methods.streamVideo = function(req, res){
       stream = chosenFile.createReadStream();
     }else{
       res.statusCode = 206;
-      res.setHeader('Content-Length', range.end - range.start + 1);
+      res.setHeader('Content-Length', range.end - range.start);
       res.setHeader('Content-Range', 'bytes '+range.start+'-'+range.end+'/'+chosenFile.length);
       stream = chosenFile.createReadStream(range);
     }
