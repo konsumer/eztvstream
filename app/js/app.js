@@ -1,4 +1,4 @@
-angular.module('app', ['templates', 'ngRoute', 'ngAnimate', 'ui.bootstrap', 'angucomplete', 'angularLocalStorage', 'angular-loading-bar'])
+angular.module('app', ['templates', 'ngRoute', 'ui.bootstrap', 'angucomplete', 'angularLocalStorage', 'angular-loading-bar'])
   .controller('MainCtrl', require('controllers/main.js'))
   .controller('EpisodesCtrl', require('controllers/episodes.js'))
   .controller('WatchCtrl', require('controllers/watch.js'))
