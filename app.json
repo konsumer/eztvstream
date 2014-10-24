@@ -1,0 +1,17 @@
+{
+  "name": "feminist phone intervention",
+  "description": "Nodejs/heroku version of Feminist Phone Intervention that logs",
+  "keywords": [
+    "feminist",
+    "phone"
+  ],
+
+  "website": "https://github.com/konsumer/feminist-phone",
+  "repository": "https://github.com/konsumer/feminist-phone",
+  "success_url": "/status",
+
+  "env": {
+  },
+
+  "addons": ["mongolab", "telapi"]
+}
