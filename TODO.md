@@ -2,7 +2,7 @@
 * [ ] smarter watch-marking that sees how much of the show you really watched (like Plex)
 * [ ] next/previous when watching a show
 * [ ] next on video end
-* [ ] save watched & subscriptions remote with & without user-login
+* [ ] save watched & subscriptions remote without user-login
 * [ ] switch to ionic over bootstrap
 * [ ] transcode pipe HTML5-unsupported video files
 * [ ] remove lodash, & replace searches if I am still using it
