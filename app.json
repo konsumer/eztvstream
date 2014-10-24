@@ -1,17 +1,20 @@
 {
-  "name": "feminist phone intervention",
-  "description": "Nodejs/heroku version of Feminist Phone Intervention that logs",
+  "name": "EZTV Stream",
+  
+  "description": "Watch EZTV with streaming torrents",
+  
   "keywords": [
-    "feminist",
-    "phone"
+    "torrent",
+    "tv",
+    "EZTV",
+    "stream"
   ],
 
-  "website": "https://github.com/konsumer/feminist-phone",
-  "repository": "https://github.com/konsumer/feminist-phone",
-  "success_url": "/status",
+  "website": "https://github.com/konsumer/eztvstream",
+  "repository": "https://github.com/konsumer/eztvstream",
 
   "env": {
   },
 
-  "addons": ["mongolab", "telapi"]
+  "addons": ["mongolab"]
 }
