@@ -6,3 +6,4 @@ npm-debug.log
 # generated files
 public/
 .cache/
+.DS_Store
