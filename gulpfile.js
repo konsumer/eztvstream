@@ -70,6 +70,7 @@ gulp.task('assets', function() {
 });
 
 gulp.task('default', ['bower', 'assets', 'templates', 'js', 'less'], function() {});
+gulp.task('postinstall', ['default'], function() {});
 
 gulp.task('clean', function() {
   return gulp.src(['bower_components/', 'public/'], {read: false})
