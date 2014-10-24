@@ -1,0 +1,20 @@
+{
+  "name": "eztvstream",
+  "version": "0.0.0",
+  "private": true,
+  "authors": [
+    "David Konsumer <konsumer@jetboystudio.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.3.0",
+    "ngStorage": "~0.1.8",
+    "angucomplete": "*",
+    "angular-ui-bootstrap-bower": "~0.11.2",
+    "angular-route": "~1.3.0",
+    "lodash": "~2.4.1"
+  },
+  "resolutions": {
+    "angular": "~1.3.0"
+  }
+}

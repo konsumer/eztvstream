@@ -1,0 +1,19 @@
+<div class="modal-header">
+    <h3 class="modal-title">New Subscription</h3>
+</div>
+<div class="modal-body">
+  <angucomplete
+    class="notitle"
+    placeholder="TV show"
+    selectedobject="selectedShow"
+    url="/api/shows?s="
+    searchfields="title"
+    titlefield="title"
+    imagefield="image"
+    minlength="1"
+    inputclass="form-control form-control-small" />
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="ok()" ng-disabled="!selectedShow">OK</button>
+    <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+</div>

@@ -1,0 +1,10 @@
+<h2>{{episode.title}}</h2>
+
+<div>
+  <a ng-if="previous" ng-click="episodePrevious()" class="btn btn-default">previous</a>
+  <a ng-if="next" ng-click="episodeNext()" class="btn btn-default">next</a>
+</div>
+
+<hr/>
+
+<video controls autoplay poster="{{show.image}}" ng-src="{{video_url}}"></video>

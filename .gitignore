@@ -1,0 +1,8 @@
+# tracked dependencies
+node_modules/
+bower_components/
+npm-debug.log
+
+# generated files
+public/
+.cache/

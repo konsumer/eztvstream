@@ -1,0 +1,26 @@
+<h2>{{show.title}}</h2>
+
+<img ng-src="{{show.image}}">
+
+<div class="pull-right form-group">
+  <button class="btn btn-danger" ng-click="subRemove(show.id)"><i class="glyphicon glyphicon-minus"></i> Remove Subscription</button>
+</div>
+
+<hr>
+
+<div class="form-group" ng-if="episodes.length > 0">
+  <button class="btn btn-default" ng-click="selectAll()">select all</button>
+  <button class="btn btn-default" ng-click="markWatched()">mark watched</button>
+</div>
+
+<div ng-if="episodes.length == 0">
+  There are no unwatched episodes avalable for {{show.title}}.
+</div>
+
+<div ng-repeat="season in seasons" >
+  <h3>Season {{season}}</h3>
+  <div ng-repeat="episode in episodes | orderBy:'-episode' | filter:{season:season}" ng-class="{watched: episode.watched}">
+    <input type="checkbox" ng-model="episode.watched">
+    <a href="/episodes/{{show.slug}}/{{episode.season}}/{{episode.episode}}">{{episode.episode}} - {{episode.title}}</a>
+  </div>
+</div>

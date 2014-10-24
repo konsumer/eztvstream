@@ -1,0 +1,26 @@
+<h3 ng-hide="subscriptions.length !== 0">You have no subscriptions. Click <a ng-click="subAdd()">here</a> to add some.</h3>
+<div class="subscriptions" ng-hide="subscriptions.length === 0">
+  
+  <div class="form-group">
+    <button class="btn btn-success" ng-click="subAdd()"><i class="glyphicon glyphicon-plus"></i> Add Subscription</button>
+  </div>
+  
+  <ul class="nav nav-tabs" ng-init="status='airing'">
+    <li ng-class="{active: status==''}"><a ng-click="status=''">all</a></li>
+    <li ng-class="{active: status=='airing'}"><a ng-click="status='airing'">airing</a></li>
+    <li ng-class="{active: status=='pending'}"><a ng-click="status='pending'">pending</a></li>
+    <li ng-class="{active: status=='break'}"><a ng-click="status='break'">break</a></li>
+    <li ng-class="{active: status=='ended'}"><a ng-click="status='ended'">ended</a></li>
+  </ul>
+  
+  <div class="row">
+    <div class="col-sm-4" ng-repeat="show in subscriptions | filter:{'status':status}">
+      <div class="show status-{{show.status}}">
+        <a href="/episodes/{{show.slug}}">
+            <img class="pull-left" ng-src="{{show.image}}">
+            <span ng-hide="show.unwatched === undefined" class="badge pull-right">{{show.unwatched.length}}</span>
+            <div class="title">{{show.title}}</div>
+        </a>
+      </div>
+  </div>
+</div>
