@@ -2,12 +2,16 @@
 
 Watch EZTV with streaming torrents
 
+You can see my running version, [here](http://eztvstream.herokuapp.com/).
+
 ## development
 
 ### quick
 
+You can install a heroku instance [here](https://heroku.com/deploy?template=https://github.com/konsumer/eztvstream).
+
 *  Install dependencies with `npm install`
-*  Set `MONGOHQ_URL`, `MONGOLAB_URI`, `MONGOSOUP_URL`, or `MONGO_URI` for your database
+*  Set `MONGOHQ_URL`, `MONGOLAB_URI`, `MONGOSOUP_URL`, or `MONGO_URI` environment variable for your database
 *  `gulp server` - Download client-side dependencies & build all files, run a watching development server that will build when files are changed
 
 ## more on gulp
