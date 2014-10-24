@@ -4,7 +4,7 @@
   "description": "Watch EZTV with streaming torrents",
   "scripts": {
     "start": "gulp server",
-    "postinstall": "gulp"
+    "postinstall": "./node_modules/.bin/gulp"
   },
   "author": "Davids Konsumer <konsumer@jetboystudio.com>",
   "license": "MIT",
