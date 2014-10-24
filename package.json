@@ -15,9 +15,8 @@
     "mime": "^1.2.11",
     "mongoose": "^3.8.18",
     "range-parser": "^1.0.2",
-    "torrent-stream": "^0.15.1"
-  },
-  "devDependencies": {
+    "torrent-stream": "^0.15.1",
+
     "bower": "^1.3.12",
     "gulp": "^3.8.8",
     "gulp-angular-templatecache": "^1.4.2",
@@ -33,5 +32,7 @@
     "gulp-util": "^3.0.1",
     "main-bower-files": "^2.1.0",
     "merge-stream": "^0.1.6"
+  },
+  "devDependencies": {
   }
 }
