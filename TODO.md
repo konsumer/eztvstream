@@ -7,3 +7,4 @@
 * [ ] transcode pipe HTML5-unsupported video files
 * [ ] remove lodash, & replace searches if I am still using it
 * [X] handle HTML5 url stuff better, in client-side (jump to correct route on refresh)
+* fix issue with `gulp --type production`, as it seems broken
